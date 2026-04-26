@@ -1,0 +1,163 @@
+a {
+color: blue;
+}
+a.list1 {
+color: #FFBB00;
+}
+a.list2 {
+color: #800000;
+}
+
+body
+{background-color: #79e2f5;}
+
+.ex4 {
+    color: green;
+}
+
+.body5 {
+    background-image: url('../image/ball.jpg');
+    margin: 0;                                 
+}
+.ex5 {
+    color: #00ff00;
+    background: red; 
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+
+.ex6 {
+    font-family: sans-serif;
+    color: #333333;   
+    font-size: 22px;  
+}
+
+.style-basic {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.style-italic {
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.style-nahyl {
+    font-family: serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.ex8 {
+    font-family: serif;
+    font-variant: small-caps;
+    font-size: 15px;
+    color: #000000;
+}
+
+p.ex9{
+ font-family: Arial, Candara, Century-Gothic, sans-serif;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: 600
+}
+
+h1.ex10{
+ font-family: Arial, Candara, Century-Gothic, sans-serif;
+ font-style: normal;
+ font-size: 30px;
+}
+h2.ex10{
+ font-family: Times New Roman, Georgia, serif;
+ font-style: italic;
+ font-size: 100pt;
+}
+h3.ex10{
+ font-family: Times New Roman, Georgia, serif;
+ font-style: italic;
+ font-size: 120%;
+}
+p.ex10{
+font-style: italic;
+font-weight: bold;
+font-size: 30px;
+font-family: arial, sans-serif;
+}
+h1.ex10{
+ font-family: Arial, Candara, Century-Gothic, sans-serif;
+ font-style: normal;
+ font-size: 30px;
+}
+h2.ex10{
+ font-family: Times New Roman, Georgia, serif;
+ font-style: italic;
+ font-size: 100pt;
+}
+h3.ex10{
+ font-family: Times New Roman, Georgia, serif;
+ font-style: italic;
+ font-size: 120%;
+}
+p{
+font: italic bold 30px arial, sans-serif;
+}
+p.ex10{
+text-indent: 3pt;
+text-align: justify;
+text-decoration: line-through;
+}
+p.ex10{letter-spacing: 2em;}
+p.ex11{text-transform: uppercase;}
+h1.ex11{text-transform: lowercase;}
+h2.ex11{text-transform: capitalize;}
+h3.ex11{text-transform: none;}
+
+
+* { 
+  margin: 0;  
+  padding: 0;  
+} 
+
+
+#container * { 
+  border: 1px solid black;  
+} 
+
+
+li a { 
+  text-decoration: none;  
+} 
+
+
+ul + p { 
+  color: red;  
+} 
+
+
+ul ~ p { 
+  color: red;  
+} 
+
+
+a[href*="everstudent"] { 
+  color: #1f6053;  
+} 
+
+
+a[href$=".jpg"] { 
+  color: red;  
+}
+a[title] { 
+  color: green;  
+}

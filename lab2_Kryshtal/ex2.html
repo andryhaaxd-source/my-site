@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота таблиці</title>
+    <link rel="stylesheet" type="text/css" href="style/tables.css">
+</head>
+<body>
+<body>
+
+    <table class="table-one">
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+        <tr>
+            <td>Data4</td>
+            <td>Data5</td>
+            <td>Data6</td>
+        </tr>
+    </table>
+    <div class="caption">Таблиця 1.</div>
+
+    <p>Примітки: ширина таблиці - 40%, висота таблиці- 200, ширина першого стовпця 150, висота другого рядка 150</p>
+    <hr>
+
+    <div class="table-two-container">
+        <table class="table-two">
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+            </tr>
+            <tr>
+                <td>Data4</td>
+                <td>Data5</td>
+                <td>Data6</td>
+            </tr>
+            <tr>
+                <td>Data7</td>
+                <td>Data8</td>
+                <td>Data9</td>
+            </tr>
+        </table>
+    </div>
+    <div class="caption">Таблиця 2.</div>
+    <div class="table-three-container">
+    <table class="table-three">
+        <tr>
+            <td class="border-blue">Data1</td>
+            <td class="border-maroon">Data2</td>
+            <td class="border-maroon">Data3</td>
+        </tr>
+        <tr>
+            <td class="border-maroon">Data4</td>
+            <td class="border-maroon">Data5</td>
+            <td class="border-gray">Data6</td>
+        </tr>
+    </table>
+</div>
+<div class="caption">Таблиця 3.</div>
+<table class="table-four">
+    <tr>
+        <td>Data1</td>
+        <td>Data2</td>
+        <td>Data3</td>
+    </tr>
+    <tr>
+        <td>Data4</td>
+        <td>Data5</td>
+        <td>Data6</td>
+    </tr>
+</table>
+<div class="caption">Таблиця 4.</div>
+
+<p>Примітки: Вільний простір між комірками всередині всієї таблиці 0%.</p>
+<p>Вільний простір між даними всередині комірки і її межами 10%.</p>
+<table class="table-five">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td class="bg-lightgreen">5</td>
+        <td>6</td>
+    </tr>
+    <tr class="bg-lightgreen">
+        <td class="no-border-right">7</td>
+        <td class="no-border-left no-border-right">8</td>
+        <td class="no-border-left">9</td>
+    </tr>
+</table>
+<div class="caption">Таблиця 5.</div>
+
+<br><br>
+
+<div class="caption" style="text-align: left;">Таблиця 6.</div>
+<table class="table-six">
+    <tr>
+        <th rowspan="2">Стать</th>
+        <th>Ріст</th>
+        <th>Вага</th>
+        <th rowspan="2">Вік</th>
+    </tr>
+    <tr>
+        <th colspan="2">Середнє значення</th>
+    </tr>
+    <tr>
+        <td>чоловіки</td>
+        <td>174</td>
+        <td>78</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>жінки</td>
+        <td>165</td>
+        <td>56</td>
+        <td>25</td>
+    </tr>
+</table>
+<table class="table-seven">
+    <tr>
+        <td colspan="2" class="bg-blue">Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td rowspan="2">Data</td>
+        <td>Data</td>
+        <td>Data</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td class="bg-rosy">Data</td>
+        <td class="bg-purple">&nbsp;</td>
+    </tr>
+</table>
+<div class="caption">Таблиця 7.</div>
+
+<br><br>
+
+<div class="caption">Таблиця 8. Таблиця вкладена в таблицю.</div>
+<table class="table-eight-outer">
+    <tr>
+        <td>Data</td>
+        <td>
+            <table class="inner-table-teal">
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="inner-table-purple">
+                <caption>Таблиця 8.1.</caption>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                </tr>
+                <tr>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                    <td>Data6</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            Data 
+            <table class="inner-table-purple" style="display: inline-table; vertical-align: middle;">
+                <caption>Таблиця 8.1.</caption>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html> 
