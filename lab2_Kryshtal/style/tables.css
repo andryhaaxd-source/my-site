@@ -152,21 +152,22 @@
 }
 
 .table-seven {
-    width: 100%;
+    width: 60%;
+    margin: 10px auto 30px auto;
     border-collapse: collapse;
-    border: 3px solid #191970; 
-    margin-bottom: 30px;
-    margin-top: 10px;
+    border: 3px solid #191970;
 }
 
 .table-seven td {
-    border: 2px solid #191970; 
+    border: 2px solid #191970;
     padding: 8px;
+    text-align: left;
+    vertical-align: top;
 }
 
-.bg-blue { background-color: #B0C4DE; }    
-.bg-rosy { background-color: #BC8F8F; }   
-.bg-purple { background-color: #BA55D3; }  
+.bg-blue { background-color: #7ab3ff; }
+.bg-rosy { background-color: #df8ba6; }
+.bg-purple { background-color: #f72fff; }
 
 .table-eight-outer {
     width: 100%;
