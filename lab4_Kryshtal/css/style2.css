@@ -1,0 +1,48 @@
+body {
+    background-image: url('../img/stage.webp'); 
+    background-size: cover;
+    padding: 20px; 
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top; 
+    width: 350px; 
+    margin-right: 60px; 
+    text-align: center;
+}
+
+/* Змінили назву класу на ту, що в HTML */
+.singer-img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 15px; 
+}
+
+p {
+    margin: 0;
+}
+
+.div {
+    padding: 10px;
+    border: dashed 3px #3bb14b;
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #ffcc99, #ff9999);
+}
+
+.div2 {
+    padding: 10px;
+    border: dashed 3px #f7ff08;
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #ffffff, #ff0101);
+}
+
+.div3 {
+    padding: 10px;
+    border: dashed 3px #fc8209;
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #46a05e90, #ff9999);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація clear</title>
+    <link rel="stylesheet" href="../css/style3.3.css">
+    <a href="../lab4.html">Lab 4</a>
+</head>
+<body>
+    <h2>Властивість clear</h2>
+
+    <div class="container">
+        <div class="box float-left">float: left</div>
+        <div class="box float-right">float: right</div>
+        
+        
+        <div class="content-box no-clear">
+            <strong>Без clear</strong><br>
+            Цей блок ігнорує float і намагається розміститися поруч з ними.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box float-left">float: left</div>
+        <div class="box float-right">float: right</div>
+        
+    
+        <div class="content-box with-clear">
+            <strong>clear: both;</strong><br>
+            Цей блок забороняє обтікання з обох боків. Він опускається нижче всіх плаваючих елементів.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація z-index</title>
+    <link rel="stylesheet" href="../css/style3.4.css">
+    <a href="../lab4.html">Lab 4</a>
+</head>
+<body>
+    <h2>Властивість z-index</h2>
+    <p>Елемент з більшим значенням z-index перекриває елемент з меншим.</p>
+
+    <div class="stack-container">
+        
+        <div class="layer box-1">
+            <strong>z-index: 1</strong><br>
+            Найнижчий шар
+        </div>
+
+       
+        <div class="layer box-2">
+            <strong>z-index: 3</strong><br>
+            Найвищий шар (перекриває всіх)
+        </div>
+
+        
+        <div class="layer box-3">
+            <strong>z-index: 2</strong><br>
+            Середній шар
+        </div>
+    </div>
+</body>
+</html>
