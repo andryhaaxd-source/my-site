@@ -1,0 +1,179 @@
+body {
+    color: #444; 
+    background-color: #ecf8c6;
+    margin: 20px;
+    text-align: center; 
+}
+
+.top-nav {
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.top-nav a {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-out;
+    transform-origin: center;
+}
+
+h2:hover {
+    transform: matrix(1.1, 0, 0, 1.1, 0, -5) rotate(-1deg);
+}
+
+h2::before {
+    content: "👗 Style: ";
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+li::before {
+    content: "⭐ "; 
+    margin-right: 5px;
+}
+
+p>q.q {
+    quotes: "«" "»"; 
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 15px;
+    transition: all 0.4s ease;
+}
+
+p>q.q:hover {
+    transform: skew(-5deg);
+    background-color: #fff;
+}
+
+p>q.q::before {
+    content: open-quote;
+    font-size: 2em;      
+    color: #888;        
+    line-height: 1em;  
+    margin-right: 5px;  
+    vertical-align: -0.1em;
+}
+
+p>q.q::after {
+    content: close-quote; 
+    font-size: 18px;
+    color: #888;
+    margin-left: 5px;
+}
+
+#divtext {
+    display: block;         
+    max-width: 800px;
+    margin: 20px auto;
+    box-sizing: border-box;  
+    border-radius: 15px;
+    resize: horizontal; 
+    overflow: auto; 
+    text-align: center;
+    text-shadow: #444 1px 1px 2px;  
+    line-height: 1.6;        
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+    color: white;           
+    padding: 20px;           
+    border: 3px dashed white; 
+    outline: 2px solid #cfe18d;
+    transition-property: transform, filter;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+#divtext:hover {
+    filter: hue-rotate(90deg);
+    transform: scaleX(1.05);
+}
+
+img {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.02);
+}
+
+.img-palto {
+    max-width: 400px;
+    height: auto;
+}
+
+.clothing-section {
+    display: block;
+    width: 95%;          
+    max-width: 900px;    
+    margin: 40px auto;   
+    padding: 30px;       
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); 
+    border: 10px solid transparent;
+    border-image-source: url('frame.png');
+    border-image-slice: 10;
+    border-image-repeat: round;
+    perspective: 1000px;
+    transition: transform 0.7s ease;
+}
+
+.clothing-section:hover {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 60, 1) translate3d(0, -5px, 0);
+}
+
+footer {
+    text-align: left;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+address {
+    text-align: left;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.my-element {
+    cursor: crosshair;
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.my-element:hover {
+    color: darkblue;
+}
+
+#a::before {
+    content: " (" attr(href) ") ";
+}
