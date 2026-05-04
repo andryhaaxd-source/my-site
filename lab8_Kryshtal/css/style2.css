@@ -1,0 +1,99 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 300px 150px;
+    grid-template-rows: 80px 400px 80px;
+    gap: 2px;
+    grid-template-areas:
+        "top top top"
+        "left center right"
+        "bottom bottom bottom";
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.grid-item1 {
+    grid-area: top;
+    background-color: rgb(0, 66, 249);
+    text-align: center;
+    border: 2px dashed cyan;
+    color: white;
+}
+
+.grid-item2 {
+    grid-area: left;
+    background-color: rgb(85, 201, 122);
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.grid-item3 {
+    grid-area: right;
+    background-color: rgb(234, 127, 202);
+    text-align: center;
+    border: 2px dotted red;
+    padding: 10px;
+}
+
+.grid-item4 {
+    grid-area: center;
+    background-color: rgb(130, 136, 221);
+    text-align: center;
+    border: 2px solid royalblue;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.grid-item5 {
+    grid-area: bottom;
+    background-color: rgb(174, 249, 0);
+    text-align: center;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 95%;
+        grid-template-areas:
+            "top"
+            "center"
+            "left"
+            "right"
+            "bottom";
+    }
+
+    .grid-item4 {
+        max-height: 300px;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    .grid-container {
+        display: block;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5 {
+        background-color: transparent !important;
+        color: black !important;
+        border: 1px solid #ccc !important;
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+    }
+
+    .grid-item4 {
+        overflow: visible;
+    }
+}
