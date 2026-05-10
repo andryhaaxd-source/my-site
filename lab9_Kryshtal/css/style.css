@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'Playwrite';
+    src: url('../fonts/PlaywriteARGuides-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    font-family: 'Caveat', cursive;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+nav {
+    background-color: #dcdde1;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2f3640;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+}
+
+.flex-header {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.flex-header h1 {
+    font-family: 'Playwrite', sans-serif; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.flex-header::after {
+    content: attr(data-subtitle);
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #7f8fa6;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.flex-sidebar {
+    background-color: #e84118;
+    color: #f5f6fa;
+    padding: 20px;
+    flex: 0 0 250px;
+}
+
+.flex-main {
+    background-color: #ffffff;
+    padding: calc(15px + 2%);
+    flex: 1;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.flex-main h3 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.flex-main p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.flex-footer {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .flex-wrapper {
+        flex-direction: column;
+    }
+    
+    .flex-sidebar {
+        flex: none;
+        width: 100%;
+    }
+
+    .flex-main {
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+@media print {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    nav, .flex-sidebar {
+        display: none;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .flex-header, .flex-footer {
+        background-color: transparent;
+        color: #000000;
+        border: 1px solid #000000;
+    }
+
+    .flex-main {
+        height: auto;
+        overflow-y: visible;
+        padding: 0;
+    }
+}
